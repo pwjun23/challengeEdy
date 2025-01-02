@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "601631315534",
+    "project_id": "molespapa2025",
+    "storage_bucket": "molespapa2025.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601631315534:android:53c95054e6a88be288551f",
+        "android_client_info": {
+          "package_name": "com.hmole.challengeEdy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQFwadGdXKx3v4KiBxOL8Kc4Y3piedMuY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
