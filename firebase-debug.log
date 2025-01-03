@@ -1,0 +1,206 @@
+[debug] [2025-01-03T01:54:23.914Z] ----------------------------------------------------------------------
+[debug] [2025-01-03T01:54:23.934Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\pwjun\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login --debug
+[debug] [2025-01-03T01:54:23.938Z] CLI Version:   13.29.1
+[debug] [2025-01-03T01:54:23.940Z] Platform:      win32
+[debug] [2025-01-03T01:54:23.941Z] Node Version:  v20.18.0
+[debug] [2025-01-03T01:54:23.942Z] Time:          Fri Jan 03 2025 10:54:23 GMT+0900 (대한민국 표준시)
+[debug] [2025-01-03T01:54:23.944Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-03T01:54:23.971Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[debug] [2025-01-03T01:54:24.299Z] *** [apiv2] error from fetch(https://firebase-public.firebaseio.com/cli.json, {"headers":{},"method":"GET"}): FetchError: request to https://firebase-public.firebaseio.com/cli.json failed, reason: self-signed certificate in certificate chain
+[warn] !  Unable to fetch the CLI MOTD and remote config. This is not a fatal error, but may indicate an issue with your network connection. 
+[debug] [2025-01-03T01:54:24.304Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=868018526&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2025-01-03T02:00:11.947Z] >>> [apiv2][query] POST https://accounts.google.com/o/oauth2/token [none]
+[debug] [2025-01-03T02:00:11.948Z] >>> [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[debug] [2025-01-03T02:00:11.983Z] *** [apiv2] error from fetch(https://accounts.google.com/o/oauth2/token, {"headers":{},"method":"POST","body":{"_overheadLength":543,"_valueLength":208,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------910180563090177636577654","_events":{},"_eventsCount":1}}): FetchError: request to https://accounts.google.com/o/oauth2/token failed, reason: self-signed certificate in certificate chain
+[debug] [2025-01-03T02:00:11.985Z] Token Fetch Error: FirebaseError: Failed to make request to https://accounts.google.com/o/oauth2/token
+    at RetryOperation._fn (C:\Users\pwjun\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:261:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2025-01-03T02:00:12.004Z] >>> [apiv2][query] POST https://auth.firebase.tools/attest [none]
+[debug] [2025-01-03T02:00:12.006Z] >>> [apiv2][body] POST https://auth.firebase.tools/attest {"session_id":"ba1d711f-f37c-47bb-aca4-4702d42b4286"}
+[debug] [2025-01-03T02:00:12.044Z] *** [apiv2] error from fetch(https://auth.firebase.tools/attest, {"headers":{},"method":"POST","body":"{\"session_id\":\"ba1d711f-f37c-47bb-aca4-4702d42b4286\"}"}): FetchError: request to https://auth.firebase.tools/attest failed, reason: self-signed certificate in certificate chain
+[debug] [2025-01-03T02:00:12.305Z] FetchError: request to https://auth.firebase.tools/attest failed, reason: self-signed certificate in certificate chain
+    at ClientRequest.<anonymous> (C:\Users\pwjun\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\node-fetch\lib\index.js:1501:11)
+    at ClientRequest.emit (node:events:519:28)
+    at ClientRequest.emit (node:domain:488:12)
+    at emitErrorEvent (node:_http_client:101:11)
+    at TLSSocket.socketErrorListener (node:_http_client:504:5)
+    at TLSSocket.emit (node:events:519:28)
+    at TLSSocket.emit (node:domain:488:12)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+[error] 
+[error] Error: Failed to make request to https://auth.firebase.tools/attest
+[debug] [2025-01-03T02:00:29.192Z] ----------------------------------------------------------------------
+[debug] [2025-01-03T02:00:29.194Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\pwjun\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login --debug
+[debug] [2025-01-03T02:00:29.195Z] CLI Version:   13.29.1
+[debug] [2025-01-03T02:00:29.195Z] Platform:      win32
+[debug] [2025-01-03T02:00:29.195Z] Node Version:  v20.18.0
+[debug] [2025-01-03T02:00:29.195Z] Time:          Fri Jan 03 2025 11:00:29 GMT+0900 (대한민국 표준시)
+[debug] [2025-01-03T02:00:29.195Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-03T02:00:29.198Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[debug] [2025-01-03T02:00:29.307Z] *** [apiv2] error from fetch(https://firebase-public.firebaseio.com/cli.json, {"headers":{},"method":"GET"}): FetchError: request to https://firebase-public.firebaseio.com/cli.json failed, reason: self-signed certificate in certificate chain
+[warn] !  Unable to fetch the CLI MOTD and remote config. This is not a fatal error, but may indicate an issue with your network connection. 
+[debug] [2025-01-03T02:00:29.308Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=729104231&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2025-01-03T02:00:40.269Z] >>> [apiv2][query] POST https://accounts.google.com/o/oauth2/token [none]
+[debug] [2025-01-03T02:00:40.273Z] >>> [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[debug] [2025-01-03T02:00:40.337Z] *** [apiv2] error from fetch(https://accounts.google.com/o/oauth2/token, {"headers":{},"method":"POST","body":{"_overheadLength":543,"_valueLength":208,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------718983701229884103418633","_events":{},"_eventsCount":1}}): FetchError: request to https://accounts.google.com/o/oauth2/token failed, reason: self-signed certificate in certificate chain
+[debug] [2025-01-03T02:00:40.339Z] Token Fetch Error: FirebaseError: Failed to make request to https://accounts.google.com/o/oauth2/token
+    at RetryOperation._fn (C:\Users\pwjun\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:261:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2025-01-03T02:00:40.353Z] >>> [apiv2][query] POST https://auth.firebase.tools/attest [none]
+[debug] [2025-01-03T02:00:40.355Z] >>> [apiv2][body] POST https://auth.firebase.tools/attest {"session_id":"d2c77302-0707-463c-8dbe-46e9c97849bf"}
+[debug] [2025-01-03T02:00:40.384Z] *** [apiv2] error from fetch(https://auth.firebase.tools/attest, {"headers":{},"method":"POST","body":"{\"session_id\":\"d2c77302-0707-463c-8dbe-46e9c97849bf\"}"}): FetchError: request to https://auth.firebase.tools/attest failed, reason: self-signed certificate in certificate chain
+[debug] [2025-01-03T02:00:40.596Z] FetchError: request to https://auth.firebase.tools/attest failed, reason: self-signed certificate in certificate chain
+    at ClientRequest.<anonymous> (C:\Users\pwjun\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\node-fetch\lib\index.js:1501:11)
+    at ClientRequest.emit (node:events:519:28)
+    at ClientRequest.emit (node:domain:488:12)
+    at emitErrorEvent (node:_http_client:101:11)
+    at TLSSocket.socketErrorListener (node:_http_client:504:5)
+    at TLSSocket.emit (node:events:519:28)
+    at TLSSocket.emit (node:domain:488:12)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+[error] 
+[error] Error: Failed to make request to https://auth.firebase.tools/attest
+[debug] [2025-01-03T02:02:23.643Z] ----------------------------------------------------------------------
+[debug] [2025-01-03T02:02:23.646Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\pwjun\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login --debug
+[debug] [2025-01-03T02:02:23.646Z] CLI Version:   13.29.1
+[debug] [2025-01-03T02:02:23.646Z] Platform:      win32
+[debug] [2025-01-03T02:02:23.646Z] Node Version:  v20.18.0
+[debug] [2025-01-03T02:02:23.647Z] Time:          Fri Jan 03 2025 11:02:23 GMT+0900 (대한민국 표준시)
+[debug] [2025-01-03T02:02:23.647Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-03T02:02:23.649Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[debug] [2025-01-03T02:02:23.724Z] *** [apiv2] error from fetch(https://firebase-public.firebaseio.com/cli.json, {"headers":{},"method":"GET"}): FetchError: request to https://firebase-public.firebaseio.com/cli.json failed, reason: self-signed certificate in certificate chain
+[warn] !  Unable to fetch the CLI MOTD and remote config. This is not a fatal error, but may indicate an issue with your network connection. 
+[debug] [2025-01-03T02:02:23.725Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=181142304&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2025-01-03T02:02:41.166Z] >>> [apiv2][query] POST https://accounts.google.com/o/oauth2/token [none]
+[debug] [2025-01-03T02:02:41.168Z] >>> [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[debug] [2025-01-03T02:02:41.233Z] *** [apiv2] error from fetch(https://accounts.google.com/o/oauth2/token, {"headers":{},"method":"POST","body":{"_overheadLength":543,"_valueLength":208,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------278324457800786117022092","_events":{},"_eventsCount":1}}): FetchError: request to https://accounts.google.com/o/oauth2/token failed, reason: self-signed certificate in certificate chain
+[debug] [2025-01-03T02:02:41.234Z] Token Fetch Error: FirebaseError: Failed to make request to https://accounts.google.com/o/oauth2/token
+    at RetryOperation._fn (C:\Users\pwjun\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:261:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2025-01-03T02:02:41.254Z] >>> [apiv2][query] POST https://auth.firebase.tools/attest [none]
+[debug] [2025-01-03T02:02:41.257Z] >>> [apiv2][body] POST https://auth.firebase.tools/attest {"session_id":"c174eb4e-67f7-49bd-8bf2-7d9b9d5dd91f"}
+[debug] [2025-01-03T02:02:41.309Z] *** [apiv2] error from fetch(https://auth.firebase.tools/attest, {"headers":{},"method":"POST","body":"{\"session_id\":\"c174eb4e-67f7-49bd-8bf2-7d9b9d5dd91f\"}"}): FetchError: request to https://auth.firebase.tools/attest failed, reason: self-signed certificate in certificate chain
+[debug] [2025-01-03T02:02:41.565Z] FetchError: request to https://auth.firebase.tools/attest failed, reason: self-signed certificate in certificate chain
+    at ClientRequest.<anonymous> (C:\Users\pwjun\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\node-fetch\lib\index.js:1501:11)
+    at ClientRequest.emit (node:events:519:28)
+    at ClientRequest.emit (node:domain:488:12)
+    at emitErrorEvent (node:_http_client:101:11)
+    at TLSSocket.socketErrorListener (node:_http_client:504:5)
+    at TLSSocket.emit (node:events:519:28)
+    at TLSSocket.emit (node:domain:488:12)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+[error] 
+[error] Error: Failed to make request to https://auth.firebase.tools/attest
+[debug] [2025-01-03T02:14:55.586Z] ----------------------------------------------------------------------
+[debug] [2025-01-03T02:14:55.588Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\pwjun\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login --debug
+[debug] [2025-01-03T02:14:55.589Z] CLI Version:   13.29.1
+[debug] [2025-01-03T02:14:55.589Z] Platform:      win32
+[debug] [2025-01-03T02:14:55.589Z] Node Version:  v20.18.0
+[debug] [2025-01-03T02:14:55.589Z] Time:          Fri Jan 03 2025 11:14:55 GMT+0900 (대한민국 표준시)
+[debug] [2025-01-03T02:14:55.589Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-03T02:14:55.592Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[debug] [2025-01-03T02:14:55.700Z] *** [apiv2] error from fetch(https://firebase-public.firebaseio.com/cli.json, {"headers":{},"method":"GET"}): FetchError: request to https://firebase-public.firebaseio.com/cli.json failed, reason: self-signed certificate in certificate chain
+[warn] !  Unable to fetch the CLI MOTD and remote config. This is not a fatal error, but may indicate an issue with your network connection. 
+[debug] [2025-01-03T02:14:55.702Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=1029811048&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2025-01-03T02:15:09.744Z] >>> [apiv2][query] POST https://accounts.google.com/o/oauth2/token [none]
+[debug] [2025-01-03T02:15:09.745Z] >>> [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[debug] [2025-01-03T02:15:09.784Z] *** [apiv2] error from fetch(https://accounts.google.com/o/oauth2/token, {"headers":{},"method":"POST","body":{"_overheadLength":543,"_valueLength":208,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------516526961335366819554398","_events":{},"_eventsCount":1}}): FetchError: request to https://accounts.google.com/o/oauth2/token failed, reason: self-signed certificate in certificate chain
+[debug] [2025-01-03T02:15:09.786Z] Token Fetch Error: FirebaseError: Failed to make request to https://accounts.google.com/o/oauth2/token
+    at RetryOperation._fn (C:\Users\pwjun\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:261:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2025-01-03T02:15:09.792Z] >>> [apiv2][query] POST https://auth.firebase.tools/attest [none]
+[debug] [2025-01-03T02:15:09.793Z] >>> [apiv2][body] POST https://auth.firebase.tools/attest {"session_id":"334b829d-a747-4046-8ccc-5cd814e01179"}
+[debug] [2025-01-03T02:15:09.978Z] *** [apiv2] error from fetch(https://auth.firebase.tools/attest, {"headers":{},"method":"POST","body":"{\"session_id\":\"334b829d-a747-4046-8ccc-5cd814e01179\"}"}): FetchError: request to https://auth.firebase.tools/attest failed, reason: self-signed certificate in certificate chain
+[debug] [2025-01-03T02:15:10.269Z] FetchError: request to https://auth.firebase.tools/attest failed, reason: self-signed certificate in certificate chain
+    at ClientRequest.<anonymous> (C:\Users\pwjun\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\node-fetch\lib\index.js:1501:11)
+    at ClientRequest.emit (node:events:519:28)
+    at ClientRequest.emit (node:domain:488:12)
+    at emitErrorEvent (node:_http_client:101:11)
+    at TLSSocket.socketErrorListener (node:_http_client:504:5)
+    at TLSSocket.emit (node:events:519:28)
+    at TLSSocket.emit (node:domain:488:12)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+[error] 
+[error] Error: Failed to make request to https://auth.firebase.tools/attest
+[debug] [2025-01-03T03:16:00.720Z] ----------------------------------------------------------------------
+[debug] [2025-01-03T03:16:00.722Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\pwjun\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login --debug
+[debug] [2025-01-03T03:16:00.722Z] CLI Version:   13.29.1
+[debug] [2025-01-03T03:16:00.722Z] Platform:      win32
+[debug] [2025-01-03T03:16:00.723Z] Node Version:  v20.18.0
+[debug] [2025-01-03T03:16:00.723Z] Time:          Fri Jan 03 2025 12:16:00 GMT+0900 (대한민국 표준시)
+[debug] [2025-01-03T03:16:00.723Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-03T03:16:00.726Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=928838532&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2025-01-03T03:16:12.989Z] *** [apiv2] error from fetch(https://firebase-public.firebaseio.com/cli.json, {"headers":{},"method":"GET"}): FetchError: request to https://firebase-public.firebaseio.com/cli.json failed, reason: getaddrinfo ENOTFOUND firebase-public.firebaseio.com
+[warn] !  Unable to fetch the CLI MOTD and remote config. This is not a fatal error, but may indicate an issue with your network connection. 
+[debug] [2025-01-03T03:16:13.004Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[debug] [2025-01-03T03:16:26.299Z] >>> [apiv2][query] POST https://accounts.google.com/o/oauth2/token [none]
+[debug] [2025-01-03T03:16:26.301Z] >>> [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[debug] [2025-01-03T03:16:26.737Z] <<< [apiv2][status] POST https://accounts.google.com/o/oauth2/token 200
+[debug] [2025-01-03T03:16:26.737Z] <<< [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[info] 
+[info] +  Success! Logged in as pwjun23@gmail.com 
